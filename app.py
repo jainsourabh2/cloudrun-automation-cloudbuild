@@ -15,7 +15,7 @@ def hello_world():
     # Return the response to the client
     return f"{message} from a Docker Container!"
 
-# Run the application
+# Run the application here
 if __name__ == '__main__':
     # Listen on all public IPs (0.0.0.0) and a specific port (8080)
     app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
